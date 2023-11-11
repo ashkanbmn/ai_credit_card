@@ -9,5 +9,3 @@
 *.podspec linguist-detectable=false
 *.m linguist-detectable=false
 *.kt linguist-detectable=false
-# Project exclude paths
-/.dart_tool/
