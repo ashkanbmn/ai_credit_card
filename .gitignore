@@ -7,5 +7,3 @@
 *.cc linguist-detectable=false
 *.h linguist-detectable=false
 *.podspec linguist-detectable=false
-*.m linguist-detectable=false
-*.kt linguist-detectable=false
