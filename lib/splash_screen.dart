@@ -29,32 +29,27 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
         body: Stack(
           children: [
             Center(
               child: SizedBox(
-                width: MediaQuery
-                    .of(context)
-                    .size
-                    .width,
-                height: MediaQuery
-                    .of(context)
-                    .size
-                    .height / 2,
-                child: Lottie.asset('assets/ai_splash_screen.json'),),
+                width: screenWidth,
+                height: screenHeight / 2,
+                child: Lottie.asset('assets/ai_splash_screen.json'),
+              ),
             ),
             Center(
               child: Opacity(
                 opacity: .8,
-                child: Image.asset('assets/ash_dev.png',  width: MediaQuery
-                    .of(context)
-                    .size
-                    .width / 4,
-                  height: MediaQuery
-                      .of(context)
-                      .size
-                      .height / 4,),
+                child: Image.asset(
+                  'assets/ash_dev.png',
+                  width: screenWidth / 4,
+                  height: screenHeight / 4,
+                ),
               ),
             )
           ],
